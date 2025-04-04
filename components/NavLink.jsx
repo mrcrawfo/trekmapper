@@ -7,7 +7,7 @@ const NavLink = ({ href, children }) => {
     const pathname = usePathname();
 
     return (
-        <Link href={href} className={`hover:text-foreground/80 transition-colors ${pathname === href ? 'text-active-contrast font-bold' : ''}`}>
+        <Link href={href} className={`hover:text-active-contrast transition-colors ${pathname === href ? 'text-active-contrast font-bold md:underline' : 'text-foreground-contrast'}`}>
             {children}
         </Link>
     );

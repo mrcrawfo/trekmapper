@@ -3,7 +3,7 @@ import NavMenu from '@/components/mobile/NavMenu';
 
 const Header = () => {
   return (
-    <header className="h-[80px] flex items-center px-6 bg-background-secondary sticky top-0 z-50">
+    <header className="h-[80px] flex items-center px-6 bg-gradient-to-t from-background-secondary to-dark-secondary sticky top-0 z-50">
         <nav className="w-full">
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-6 items-center">

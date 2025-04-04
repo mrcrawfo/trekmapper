@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from 'react';
 
-import { usePathname } from 'next/navigation'
+import { usePathname } from 'next/navigation';
+
+import '@/app/globals.css';
 
 import NavLink from '@/components/NavLink';
 
@@ -44,11 +46,14 @@ const NavMenu = () => {
                 </svg>
             </button>
 
-            <ul id="mobile-menu" className="hidden absolute left-0 right-0 bg-background border-b px-0  mt-2">
+            <ul id="mobile-menu" className="hidden absolute left-0 right-0 bg-background border-b px-0 mt-2 z-50">
                 <li className="py-2 pl-8 bg-background-secondary w-screen">
                     <NavLink href="/">
                     Home
                     </NavLink>
+                </li>
+                <li className="py-0 pl-0 my-0 bg-background-secondary w-screen">
+                    <div className="horizontal-divider nav-divider ml-0" />
                 </li>
                 <li className="py-2 pl-8 bg-background-secondary w-screen">
                     <NavLink href="/about">
