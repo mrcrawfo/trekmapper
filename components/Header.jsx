@@ -1,10 +1,10 @@
 'use client'
 
+import Link from 'next/link';
 import { usePathname } from 'next/navigation'
 
 const Header = () => {
   const pathname = usePathname();
-  console.log('pathname',pathname);
 
   return (
     <header className="h-[80px] flex items-center px-6 bg-background-secondary sticky top-0 z-50">
@@ -12,14 +12,14 @@ const Header = () => {
             {/* Desktop Menu */}
             <ul className="hidden md:flex gap-6 items-center">
                 <li>
-                    <a href="/" className={`hover:text-foreground/80 transition-colors ${pathname === '/' ? 'text-active-contrast' : ''}`}>
+                    <Link href="/" className={`hover:text-foreground/80 transition-colors ${pathname === '/' ? 'text-active-contrast' : ''}`}>
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="/about" className={`hover:text-foreground/80 transition-colors ${pathname === '/about' ? 'text-active-contrast' : ''}`}>
+                    <Link href="/about" className={`hover:text-foreground/80 transition-colors ${pathname === '/about' ? 'text-active-contrast' : ''}`}>
                         About
-                    </a>
+                    </Link>
                 </li>
             </ul>
 
@@ -39,14 +39,14 @@ const Header = () => {
 
                 <ul id="mobile-menu" className="hidden absolute left-0 right-0 bg-background border-b border-foreground/10 px-0 py-4 mt-2">
                     <li className={`py-2 bg-background-secondary w-screen  ${pathname === '/' ? 'text-active-contrast bg-active-secondary' : ''}`}>
-                        <a href="/" className="block hover:text-foreground/80 transition-colors px-6">
+                        <Link href="/" className="block hover:text-foreground/80 transition-colors px-6">
                         Home
-                        </a>
+                        </Link>
                     </li>
                     <li className={`py-2 bg-background-secondary -screen  ${pathname === '/about' ? 'text-active-contrast bg-active-secondary' : ''}`}>
-                        <a href="/about" className="block hover:text-foreground/80 transition-colors px-6">
+                        <Link href="/about" className="block hover:text-foreground/80 transition-colors px-6">
                         About
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </div>
