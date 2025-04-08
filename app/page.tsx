@@ -35,6 +35,19 @@ export default function Home() {
             </section>
             <div className="horizontal-divider" />
             <section>
+              <h3>Start Your Journey Today</h3>
+              <div className="py-2">
+                <p className="text-center">TrekMapper is completely free to use.</p>
+                <p className="text-center">Sign up now and transform today's walk into the beginning of an adventure.</p>
+                <h4 className="text-center">Where will your feet take you?</h4>
+                <div className="flex flex-row gap-4 pt-4 mb-4 justify-center items-center">
+                  <button className="bg-green-800 text-white px-4 py-2 rounded-md w-40 md:w-[25vw] hover:bg-green-600 hover:scale-102 hover:font-bold transition-all duration-300">Get Started</button>
+                  <button className="bg-blue-800 text-white px-4 py-2 rounded-md w-40 md:w-[25vw] hover:bg-blue-600 hover:scale-102 hover:font-bold transition-all duration-300">Learn More</button>
+                </div>
+              </div>
+            </section>
+            <div className="horizontal-divider" />
+            <section>
               <h3>Why Choose TrekMapper?</h3>
               <div className="py-2">
                 <h5>Set Meaningful Goals</h5>
@@ -51,19 +64,6 @@ export default function Home() {
               <div className="py-2">
                 <h5>Earn Recognition</h5>
                 <p>Celebrate milestones with digital badges and achievements. From your first mile to completing epic journeys, TrekMapper acknowledges your dedication every step of the way.</p>
-              </div>
-            </section>
-            <div className="horizontal-divider" />
-            <section>
-              <h3>Start Your Journey Today</h3>
-              <div className="py-2">
-                <p className="text-center">TrekMapper is completely free to use.</p>
-                <p className="text-center">Sign up now and transform today's walk into the beginning of an adventure.</p>
-                <h4 className="text-center">Where will your feet take you?</h4>
-                <div className="flex flex-row gap-4 pt-4 mb-4 justify-center items-center">
-                  <button className="bg-green-800 text-white px-4 py-2 rounded-md w-40 md:w-[25vw] hover:bg-green-600 hover:scale-102 hover:font-bold transition-all duration-300">Get Started</button>
-                  <button className="bg-blue-800 text-white px-4 py-2 rounded-md w-40 md:w-[25vw] hover:bg-blue-600 hover:scale-102 hover:font-bold transition-all duration-300">Learn More</button>
-                </div>
               </div>
             </section>
           </div>
