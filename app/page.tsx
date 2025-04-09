@@ -6,7 +6,7 @@ import splash from '@/assets/splash.png';
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col items-center justify-start py-2">
+      <div className="flex flex-col items-center justify-start py-2 z-10">
         <div className="w-4/5 max-w-[800px] relative aspect-[4/3]">
           <Image
             src={splash}
@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <h2 className="text-lg text-center px-6">Trek Mapper is a tool for creating and sharing maps of your adventures</h2>
         <div className="horizontal-divider" />
-        <section>
+        <section className="z-10">
           <h3>TrekMapper - Turn Every Step Into an Adventure</h3>
           <div className="py-2">
             <h5>Chart Your Journey, Celebrate Every Mile</h5>
@@ -30,7 +30,7 @@ export default function Home() {
           </div>
         </section>
         <div className="horizontal-divider" />
-        <section>
+        <section className="z-10">
           <h3>Start Your Journey Today</h3>
           <div className="py-2">
             <p className="text-center">TrekMapper is completely free to use.</p>
@@ -43,7 +43,7 @@ export default function Home() {
           </div>
         </section>
         <div className="horizontal-divider" />
-        <section>
+        <section className="z-10">
           <h3>Why Choose TrekMapper?</h3>
           <div className="py-2">
             <h5>Set Meaningful Goals</h5>
