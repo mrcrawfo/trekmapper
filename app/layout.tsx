@@ -31,7 +31,18 @@ export default function Layout({
       >
         <Header />
         <main className="flex-1 bg-background-primary">
-          {children}
+          <div className="flex flex-col items-center justify-center min-h-[calc(100vh-80px)] h-full min-h-screen">
+            <div className="block md:grid grid-cols-12 w-full h-full">
+              {/* Left gutter */}
+              <div className="col-span-2 hidden md:block bg-gradient-to-r from-black to-background-primary h-full min-h-screen" />
+              {/* Main content column */}
+              <div className="md:col-span-8 h-full min-h-screen">
+                {children}
+              </div>
+              {/* Right gutter */}
+              <div className="col-span-2 hidden md:block bg-gradient-to-l from-black to-background-primary h-full min-h-screen" />
+            </div>
+          </div>
         </main>
       </body>
     </html>
